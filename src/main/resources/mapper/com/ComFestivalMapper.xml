@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.oldtown.modules.com.mapper.ComFestivalMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.oldtown.modules.com.model.ComFestival">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="visitor_num" property="visitorNum" />
+        <result column="sales_amount" property="salesAmount" />
+        <result column="year" property="year" />
+        <result column="start_time" property="startTime" />
+        <result column="deleted" property="deleted" />
+        <result column="create_time" property="createTime" />
+        <result column="remarks" property="remarks" />
+    </resultMap>
+
+</mapper>

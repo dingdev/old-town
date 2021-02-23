@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.oldtown.modules.xcx.mapper.XcxPropagandaMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.oldtown.modules.xcx.model.XcxPropaganda">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="type" property="type" />
+        <result column="intro" property="intro" />
+        <result column="cover_url" property="coverUrl" />
+        <result column="picture_url" property="pictureUrl" />
+        <result column="video_url" property="videoUrl" />
+        <result column="vr_url" property="vrUrl" />
+        <result column="ar_url" property="arUrl" />
+        <result column="from_time" property="fromTime" />
+        <result column="to_time" property="toTime" />
+        <result column="sorting_order" property="sortingOrder" />
+        <result column="create_time" property="createTime" />
+        <result column="deleted" property="deleted" />
+    </resultMap>
+
+</mapper>

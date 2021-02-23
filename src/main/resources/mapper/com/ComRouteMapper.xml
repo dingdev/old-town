@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.oldtown.modules.com.mapper.ComRouteMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.oldtown.modules.com.model.ComRoute">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="content_ids" property="contentIds" />
+        <result column="intro" property="intro" />
+        <result column="length" property="length" />
+        <result column="picture_url" property="pictureUrl" />
+        <result column="line_string" property="lineString" jdbcType="OTHER" typeHandler="com.example.oldtown.handler.GeometryTypeHandler" />
+        <result column="label" property="label" />
+        <result column="day_num" property="dayNum" />
+        <result column="details_url" property="detailsUrl" />
+        <result column="if_hotel" property="ifHotel" />
+        <result column="if_show" property="ifShow" />
+        <result column="color" property="color" />
+        <result column="if_favorite" property="ifFavorite" />
+        <result column="deleted" property="deleted" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="remarks" property="remarks" />
+    </resultMap>
+
+</mapper>

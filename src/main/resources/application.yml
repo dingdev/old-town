@@ -1,0 +1,77 @@
+server:
+  port: 9528
+spring:
+  application:
+    name: old-town
+  profiles:
+    active: dev
+  jackson:
+    date-format: yyyy/MM/dd HH:mm:ss
+    time-zone: GMT+8
+
+  #  datasource:
+  #    mysql:
+  #      type: com.alibaba.druid.pool.DruidDataSource
+  #      driver-class-name: com.mysql.cj.jdbc.Driver
+  #      url: jdbc:mysql://localhost:3306/old-town?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+  #      #      url: jdbc:mysql://192.168.1.48:3306/nanxun_club?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+  #      ##     #local
+  #      username: ENC(+ST/Fu9bNILBMBtlAaSNd/cHBHGMQleMp932XLusmEKkzCmlW2jGMVloILUW7POh)
+  #      password: ENC(xPr/Ba6a0+QRmhDRgJoFCuMN7JjatpHtWcnqeXSDcSkZdoSl+cTobTfVj6v7W72g)
+  #      #48server
+  #      username: ENC(6F2ubDMDl93wQ782/JOHy+KDkxwRgOWrSzKQvF474LaEWX8NodAw77nEkVU68Uoo)
+  #      password: ENC(V2od0s74z1ZNtIpxPI+Ao4MSs7yCfJisx7XhdYZ3dQ5ipy9OfZuJzhrQj9oU/zhM)
+
+  #    sqlserver:
+  #      type: com.alibaba.druid.pool.DruidDataSource
+  #      #      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  #      url: jdbc:sqlserver://localhost:1433;databaseName=nanxunMap
+  #      #      url: jdbc:sqlserver://192.168.1.48:1433;databaseName=nanxunMap
+  #      #      #local
+  #      #      username: ENC(Yk9EHvlNrlhXb6nDxaiyuFRc0HwJ2HYM8zUZRl8P7odasVP6C4qwyhzC2ra8B9eM)
+  #      #      password: ENC(lNc3rZ+avLcwG/kjaRcVadZN8d2KgYyF+u4XOmOPxnwcuWr37LbXozeynGWkKkjr)
+  #      #48server
+  #      username: ENC(MsqDJN2/X7Ec9xzpjyvoNxQsRaLGhyD7Zy78KPIR0ucDNT/4MO7XkqJAOMUqGBlj)
+  #      password: ENC(W4nCpvbmIToCMMcTQWEB7Ls9kGZuRu1hY74KVRjW+73/8tK75bp5Bbg4ZrT+6fbO)
+
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 110MB
+  resources:
+    static-locations:
+      - 'classpath:/META-INF/resources/'
+      - 'classpath:/resources/'
+      - 'classpath:/static/'
+      - 'classpath:/public/'
+#      - 'file${self.static-path}'
+
+redis:
+  database: old-town
+  key:
+    admin: 'sys:admin'
+    resourceList: 'ums:resourceList'
+  expire:
+    common: 86400 # 24小时
+
+
+# jwt token相关
+jwt:
+  tokenHeader: Authorization #请求头
+  secret: oldtownjwtsecret #jwt加解密的秘钥
+  expiration: 86400 #jwt超限时间(24*60*60)
+  tokenHead: Bearer #jwt负载的开头
+
+##jasypt加密的密匙
+#jasypt:
+#  encryptor:
+#    password: v73IXTKoaxZlJ7EbfYkitu2p0mXI50JM
+
+# 自定义相关
+self:
+  password: 'oldtownselfpassword'
+  #  static-path: 'D:/java-web/old-town/static/'
+  #  file-url: 'http://192.168.1.49:9528/nanxun3.0/file/'
+  # file-url: 'http://192.168.1.48:9521/file/'
+#  file-url: 'http://192.168.1.48:9900/api/file/'
+

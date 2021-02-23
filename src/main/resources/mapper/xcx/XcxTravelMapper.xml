@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.oldtown.modules.xcx.mapper.XcxTravelMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.oldtown.modules.xcx.model.XcxTravel">
+        <id column="id" property="id" />
+        <result column="user_id" property="userId" />
+        <result column="route_id" property="routeId" />
+        <result column="name" property="name" />
+        <result column="cover_url" property="coverUrl" />
+        <result column="label" property="label" />
+        <result column="day_num" property="dayNum" />
+        <result column="tourist_num" property="touristNum" />
+        <result column="start_time" property="startTime" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+</mapper>

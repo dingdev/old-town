@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.oldtown.modules.trf.mapper.TrfSecurityStaffMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.oldtown.modules.trf.model.TrfSecurityStaff">
+        <id column="id" property="id" />
+        <result column="serial" property="serial" />
+        <result column="username" property="username" />
+        <result column="password" property="password" />
+        <result column="nickname" property="nickname" />
+        <result column="age" property="age" />
+        <result column="type" property="type" />
+        <result column="gps_code" property="gpsCode" />
+        <result column="avatar_url" property="avatarUrl" />
+        <result column="if_captain" property="ifCaptain" />
+        <result column="route_id" property="routeId" />
+        <result column="tel" property="tel" />
+        <result column="current_status" property="currentStatus" />
+        <result column="longitude" property="longitude" />
+        <result column="latitude" property="latitude" />
+        <result column="gps_time" property="gpsTime" />
+        <result column="deleted" property="deleted" />
+        <result column="remarks" property="remarks" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+</mapper>

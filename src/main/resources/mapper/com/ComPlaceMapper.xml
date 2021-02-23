@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.oldtown.modules.com.mapper.ComPlaceMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.oldtown.modules.com.model.ComPlace">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="nickname" property="nickname" />
+        <result column="type" property="type" />
+        <result column="code" property="code" />
+        <result column="address" property="address" />
+        <result column="picture_url" property="pictureUrl" />
+        <result column="label" property="label" />
+        <result column="intro" property="intro" />
+        <result column="price" property="price" />
+        <result column="buy_url" property="buyUrl" />
+        <result column="if_self" property="ifSelf" />
+        <result column="audio_url" property="audioUrl" />
+        <result column="vr_url" property="vrUrl" />
+        <result column="level" property="level" />
+        <result column="view_num" property="viewNum" />
+        <result column="if_favorite" property="ifFavorite" />
+        <result column="contact" property="contact" />
+        <result column="tel" property="tel" />
+        <result column="capacity_num" property="capacityNum" />
+        <result column="current_num" property="currentNum" />
+        <result column="longitude" property="longitude" />
+        <result column="latitude" property="latitude" />
+        <result column="polygon" property="polygon" jdbcType="OTHER" typeHandler="com.example.oldtown.handler.GeometryTypeHandler" />
+        <result column="suggest_time" property="suggestTime" />
+        <result column="model_id" property="modelId" />
+        <result column="sorting_order" property="sortingOrder" />
+        <result column="deleted" property="deleted" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="remarks" property="remarks" />
+    </resultMap>
+
+</mapper>

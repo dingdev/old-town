@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.oldtown.modules.trf.mapper.TrfGpsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.oldtown.modules.trf.model.TrfGps">
+        <id column="id" property="id" />
+        <result column="gps_code" property="gpsCode" />
+        <result column="gps_time" property="gpsTime" />
+        <result column="longitude" property="longitude" />
+        <result column="latitude" property="latitude" />
+        <result column="speed" property="speed" />
+    </resultMap>
+
+</mapper>

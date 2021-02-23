@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.oldtown.modules.com.mapper.ComActivityMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.oldtown.modules.com.model.ComActivity">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="intro" property="intro" />
+        <result column="address" property="address" />
+        <result column="poi_id" property="poiId" />
+        <result column="tel" property="tel" />
+        <result column="start_time" property="startTime" />
+        <result column="picture_url" property="pictureUrl" />
+        <result column="cover_url" property="coverUrl" />
+        <result column="sorting_order" property="sortingOrder" />
+        <result column="status" property="status" />
+        <result column="remarks" property="remarks" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+</mapper>
