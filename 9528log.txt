@@ -1,0 +1,390 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.0.RELEASE)
+
+2021-01-19 17:19:12.833  INFO 18348 --- [           main] com.example.oldtown.OldTownApplication   : Starting OldTownApplication on dyppc with PID 18348 (D:\java-web\old-town\out\artifacts\old_town_jar\old-town.jar started by dyp in D:\java-web\old-town)
+2021-01-19 17:19:12.835  INFO 18348 --- [           main] com.example.oldtown.OldTownApplication   : The following profiles are active: dev
+2021-01-19 17:19:14.055  INFO 18348 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 17:19:14.057  INFO 18348 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 17:19:14.109  INFO 18348 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36ms. Found 0 Redis repository interfaces.
+2021-01-19 17:19:14.236  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'comActivityMapper' and 'com.example.oldtown.modules.com.mapper.ComActivityMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.236  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'comFestivalMapper' and 'com.example.oldtown.modules.com.mapper.ComFestivalMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.236  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'comInfoMapper' and 'com.example.oldtown.modules.com.mapper.ComInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.236  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'comPlaceMapper' and 'com.example.oldtown.modules.com.mapper.ComPlaceMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.236  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'comPoiMapper' and 'com.example.oldtown.modules.com.mapper.ComPoiMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.236  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'comQaMapper' and 'com.example.oldtown.modules.com.mapper.ComQaMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.236  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'comRouteMapper' and 'com.example.oldtown.modules.com.mapper.ComRouteMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.236  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'comSpecialtyMapper' and 'com.example.oldtown.modules.com.mapper.ComSpecialtyMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.236  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'sysAdminMapper' and 'com.example.oldtown.modules.sys.mapper.SysAdminMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.236  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'sysAdminRoleRelationMapper' and 'com.example.oldtown.modules.sys.mapper.SysAdminRoleRelationMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.236  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'sysLogMapper' and 'com.example.oldtown.modules.sys.mapper.SysLogMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.236  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'sysPermissionMapper' and 'com.example.oldtown.modules.sys.mapper.SysPermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.237  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'sysRoleMapper' and 'com.example.oldtown.modules.sys.mapper.SysRoleMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.237  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'sysRolePermissionRelationMapper' and 'com.example.oldtown.modules.sys.mapper.SysRolePermissionRelationMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.237  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'trfAlarmMapper' and 'com.example.oldtown.modules.trf.mapper.TrfAlarmMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.237  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'trfDockStaffMapper' and 'com.example.oldtown.modules.trf.mapper.TrfDockStaffMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.237  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'trfGpsMapper' and 'com.example.oldtown.modules.trf.mapper.TrfGpsMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.237  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'trfMileageMapper' and 'com.example.oldtown.modules.trf.mapper.TrfMileageMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.237  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'trfSecurityCarMapper' and 'com.example.oldtown.modules.trf.mapper.TrfSecurityCarMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.237  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'trfSecurityCheckMapper' and 'com.example.oldtown.modules.trf.mapper.TrfSecurityCheckMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.237  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'trfSecurityRouteMapper' and 'com.example.oldtown.modules.trf.mapper.TrfSecurityRouteMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.237  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'trfSecurityStaffMapper' and 'com.example.oldtown.modules.trf.mapper.TrfSecurityStaffMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.237  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'trfStaffGpsMapper' and 'com.example.oldtown.modules.trf.mapper.TrfStaffGpsMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.237  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'trfSweepCheckMapper' and 'com.example.oldtown.modules.trf.mapper.TrfSweepCheckMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.237  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'trfSweepMapper' and 'com.example.oldtown.modules.trf.mapper.TrfSweepMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.237  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'trfSweepPointMapper' and 'com.example.oldtown.modules.trf.mapper.TrfSweepPointMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.237  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'trfSweepRouteMapper' and 'com.example.oldtown.modules.trf.mapper.TrfSweepRouteMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.237  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'trfSweepStaffMapper' and 'com.example.oldtown.modules.trf.mapper.TrfSweepStaffMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.237  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'trfYachtMapper' and 'com.example.oldtown.modules.trf.mapper.TrfYachtMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.237  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'trfYachtStaffMapper' and 'com.example.oldtown.modules.trf.mapper.TrfYachtStaffMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.237  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'xcxFavoriteMapper' and 'com.example.oldtown.modules.xcx.mapper.XcxFavoriteMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.238  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'xcxFeedbackMapper' and 'com.example.oldtown.modules.xcx.mapper.XcxFeedbackMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.238  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'xcxNewsMapper' and 'com.example.oldtown.modules.xcx.mapper.XcxNewsMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.238  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'xcxNoticeMapper' and 'com.example.oldtown.modules.xcx.mapper.XcxNoticeMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.238  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'xcxPropagandaMapper' and 'com.example.oldtown.modules.xcx.mapper.XcxPropagandaMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.238  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'xcxTravelMapper' and 'com.example.oldtown.modules.xcx.mapper.XcxTravelMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.238  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'xcxUserMapper' and 'com.example.oldtown.modules.xcx.mapper.XcxUserMapper' mapperInterface. Bean already defined with the same name!
+2021-01-19 17:19:14.238  WARN 18348 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.oldtown.modules.*.mapper]' package. Please check your configuration.
+2021-01-19 17:19:14.373  INFO 18348 --- [           main] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+2021-01-19 17:19:14.391  INFO 18348 --- [           main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2021-01-19 17:19:14.391  INFO 18348 --- [           main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-01-19 17:19:14.391  INFO 18348 --- [           main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-01-19 17:19:14.391  INFO 18348 --- [           main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-01-19 17:19:14.391  INFO 18348 --- [           main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-01-19 17:19:14.391  INFO 18348 --- [           main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-01-19 17:19:14.391  INFO 18348 --- [           main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-01-19 17:19:14.391  INFO 18348 --- [           main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-01-19 17:19:14.611  INFO 18348 --- [           main] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-01-19 17:19:14.720  INFO 18348 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1d0cac30' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-19 17:19:14.726  INFO 18348 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-19 17:19:15.022  INFO 18348 --- [           main] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2021-01-19 17:19:15.025  INFO 18348 --- [           main] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2021-01-19 17:19:15.248  INFO 18348 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9528 (http)
+2021-01-19 17:19:15.258  INFO 18348 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-19 17:19:15.259  INFO 18348 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-01-19 17:19:15.320  INFO 18348 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-19 17:19:15.320  INFO 18348 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2445 ms
+2021-01-19 17:19:15.682  INFO 18348 --- [           main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-01-19 17:19:15.878  INFO 18348 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.3.2 
+2021-01-19 17:19:18.462 ERROR 18348 --- [           main] com.example.oldtown.util.ScheduledUtil   : 定时更新 gpsCode的缓存 失败:
+
+org.springframework.data.redis.RedisSystemException: Unknown redis exception; nested exception is java.lang.IllegalArgumentException: Fields must not be empty
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.getFallback(FallbackExceptionTranslationStrategy.java:53) ~[spring-data-redis-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:43) ~[spring-data-redis-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:273) ~[spring-data-redis-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceHashCommands.convertLettuceAccessException(LettuceHashCommands.java:471) ~[spring-data-redis-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceHashCommands.hDel(LettuceHashCommands.java:122) ~[spring-data-redis-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.hDel(DefaultedRedisConnection.java:1096) ~[spring-data-redis-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.data.redis.core.DefaultHashOperations.lambda$delete$12(DefaultHashOperations.java:234) ~[spring-data-redis-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228) ~[spring-data-redis-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188) ~[spring-data-redis-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96) ~[spring-data-redis-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.data.redis.core.DefaultHashOperations.delete(DefaultHashOperations.java:234) ~[spring-data-redis-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at com.example.oldtown.util.ScheduledUtil.pullTrfGpsCode(ScheduledUtil.java:271) [old-town.jar:na]
+	at com.example.oldtown.util.ScheduledUtil.init(ScheduledUtil.java:109) [old-town.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389) [spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333) [spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157) [spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:416) [spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788) [spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) [spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) [spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) [spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) [spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1306) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) [spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) [spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) [spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) [spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) [spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1306) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) [spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) [spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) [spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) [spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) [spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:895) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at com.example.oldtown.OldTownApplication.main(OldTownApplication.java:21) ~[old-town.jar:na]
+Caused by: java.lang.IllegalArgumentException: Fields must not be empty
+	at io.lettuce.core.internal.LettuceAssert.notEmpty(LettuceAssert.java:100) ~[lettuce-core-5.3.0.RELEASE.jar:5.3.0.RELEASE]
+	at io.lettuce.core.RedisCommandBuilder.hdel(RedisCommandBuilder.java:851) ~[lettuce-core-5.3.0.RELEASE.jar:5.3.0.RELEASE]
+	at io.lettuce.core.AbstractRedisAsyncCommands.hdel(AbstractRedisAsyncCommands.java:670) ~[lettuce-core-5.3.0.RELEASE.jar:5.3.0.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:57) ~[lettuce-core-5.3.0.RELEASE.jar:5.3.0.RELEASE]
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80) ~[lettuce-core-5.3.0.RELEASE.jar:5.3.0.RELEASE]
+	at com.sun.proxy.$Proxy146.hdel(Unknown Source) ~[na:na]
+	at org.springframework.data.redis.connection.lettuce.LettuceHashCommands.hDel(LettuceHashCommands.java:120) ~[spring-data-redis-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	... 60 common frames omitted
+
+2021-01-19 17:19:20.044  INFO 18348 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-19 17:19:20.185  INFO 18348 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/swagger/**'], []
+2021-01-19 17:19:20.186  INFO 18348 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/swagger-ui.html'], []
+2021-01-19 17:19:20.186  INFO 18348 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/webjars/**'], []
+2021-01-19 17:19:20.186  INFO 18348 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/v2/**'], []
+2021-01-19 17:19:20.186  INFO 18348 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/webjars/springfox-swagger-ui/**'], []
+2021-01-19 17:19:20.186  INFO 18348 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/v2/api-docs/**'], []
+2021-01-19 17:19:20.186  INFO 18348 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**/swagger-ui.html'], []
+2021-01-19 17:19:20.186  INFO 18348 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**/webjars/**'], []
+2021-01-19 17:19:20.186  INFO 18348 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/swagger-resources/**'], []
+2021-01-19 17:19:20.186  INFO 18348 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/v2/api-docs-ext/**'], []
+2021-01-19 17:19:20.186  INFO 18348 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/doc.html'], []
+2021-01-19 17:19:20.186  INFO 18348 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2021-01-19 17:19:20.186  INFO 18348 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**/*.html'], []
+2021-01-19 17:19:20.186  INFO 18348 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**/*.css'], []
+2021-01-19 17:19:20.186  INFO 18348 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**/*.js'], []
+2021-01-19 17:19:20.186  INFO 18348 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/*.html'], []
+2021-01-19 17:19:20.186  INFO 18348 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/'], []
+2021-01-19 17:19:20.186  INFO 18348 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/META-INF/**'], []
+2021-01-19 17:19:20.212  INFO 18348 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@239d73ff, org.springframework.security.web.context.SecurityContextPersistenceFilter@c335b9, org.springframework.security.web.header.HeaderWriterFilter@44f23927, org.springframework.security.web.authentication.logout.LogoutFilter@10724a72, com.example.oldtown.component.JwtAuthenticationTokenFilter@cfd5cd2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c68e82, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a8ead9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6bf28f61, org.springframework.security.web.session.SessionManagementFilter@87fc0fc, org.springframework.security.web.access.ExceptionTranslationFilter@228958a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2b0494a8]
+2021-01-19 17:19:20.242  INFO 18348 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-19 17:19:20.357  INFO 18348 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-19 17:19:20.570  INFO 18348 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-01-19 17:19:20.635  INFO 18348 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9528 (http) with context path ''
+2021-01-19 17:19:20.637  INFO 18348 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+2021-01-19 17:19:20.640  INFO 18348 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 3 custom documentation plugin(s)
+2021-01-19 17:19:20.699  INFO 18348 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-19 17:19:20.818  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_1
+2021-01-19 17:19:20.820  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_1
+2021-01-19 17:19:20.821  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2021-01-19 17:19:20.823  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_1
+2021-01-19 17:19:20.830  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2021-01-19 17:19:20.834  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_1
+2021-01-19 17:19:20.842  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_2
+2021-01-19 17:19:20.845  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_2
+2021-01-19 17:19:20.847  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2021-01-19 17:19:20.848  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteFileUsingDELETE_1
+2021-01-19 17:19:20.850  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_2
+2021-01-19 17:19:20.854  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_2
+2021-01-19 17:19:20.855  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadFileUsingPOST_1
+2021-01-19 17:19:20.865  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_2
+2021-01-19 17:19:20.872  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_3
+2021-01-19 17:19:20.873  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchAddWithExcelUsingPOST_1
+2021-01-19 17:19:20.874  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_3
+2021-01-19 17:19:20.876  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_3
+2021-01-19 17:19:20.877  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteFileUsingDELETE_2
+2021-01-19 17:19:20.879  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_3
+2021-01-19 17:19:20.880  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCurrentTypesUsingGET_1
+2021-01-19 17:19:20.882  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_3
+2021-01-19 17:19:20.884  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadFileUsingPOST_2
+2021-01-19 17:19:20.889  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_3
+2021-01-19 17:19:20.894  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_4
+2021-01-19 17:19:20.895  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_4
+2021-01-19 17:19:20.897  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_4
+2021-01-19 17:19:20.899  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_4
+2021-01-19 17:19:20.902  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_4
+2021-01-19 17:19:20.905  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_4
+2021-01-19 17:19:20.910  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_5
+2021-01-19 17:19:20.912  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_5
+2021-01-19 17:19:20.913  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_5
+2021-01-19 17:19:20.915  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteFileUsingDELETE_3
+2021-01-19 17:19:20.916  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_5
+2021-01-19 17:19:20.920  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_5
+2021-01-19 17:19:20.921  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadFileUsingPOST_3
+2021-01-19 17:19:20.927  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_5
+2021-01-19 17:19:20.932  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_6
+2021-01-19 17:19:20.933  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_6
+2021-01-19 17:19:20.934  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_6
+2021-01-19 17:19:20.935  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteFileUsingDELETE_4
+2021-01-19 17:19:20.936  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_6
+2021-01-19 17:19:20.938  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_6
+2021-01-19 17:19:20.939  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadFileUsingPOST_4
+2021-01-19 17:19:20.942  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_6
+2021-01-19 17:19:21.030  INFO 18348 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-19 17:19:21.038  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_7
+2021-01-19 17:19:21.039  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_7
+2021-01-19 17:19:21.040  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_7
+2021-01-19 17:19:21.041  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_7
+2021-01-19 17:19:21.042  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_7
+2021-01-19 17:19:21.047  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_7
+2021-01-19 17:19:21.051  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_8
+2021-01-19 17:19:21.052  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_8
+2021-01-19 17:19:21.053  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_8
+2021-01-19 17:19:21.054  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteFileUsingDELETE_5
+2021-01-19 17:19:21.055  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_8
+2021-01-19 17:19:21.056  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_8
+2021-01-19 17:19:21.057  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadFileUsingPOST_5
+2021-01-19 17:19:21.063  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_8
+2021-01-19 17:19:21.067  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_9
+2021-01-19 17:19:21.068  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_9
+2021-01-19 17:19:21.069  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_9
+2021-01-19 17:19:21.070  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_9
+2021-01-19 17:19:21.072  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_9
+2021-01-19 17:19:21.076  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_9
+2021-01-19 17:19:21.079  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_10
+2021-01-19 17:19:21.080  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_10
+2021-01-19 17:19:21.082  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_10
+2021-01-19 17:19:21.083  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_10
+2021-01-19 17:19:21.084  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_10
+2021-01-19 17:19:21.087  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_10
+2021-01-19 17:19:21.091  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_11
+2021-01-19 17:19:21.092  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_11
+2021-01-19 17:19:21.093  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_11
+2021-01-19 17:19:21.095  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteFileUsingDELETE_6
+2021-01-19 17:19:21.096  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_11
+2021-01-19 17:19:21.097  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_11
+2021-01-19 17:19:21.098  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadFileUsingPOST_6
+2021-01-19 17:19:21.103  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_11
+2021-01-19 17:19:21.107  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_12
+2021-01-19 17:19:21.108  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_12
+2021-01-19 17:19:21.109  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_12
+2021-01-19 17:19:21.110  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_12
+2021-01-19 17:19:21.111  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_12
+2021-01-19 17:19:21.115  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_12
+2021-01-19 17:19:21.120  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_13
+2021-01-19 17:19:21.121  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_13
+2021-01-19 17:19:21.122  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_13
+2021-01-19 17:19:21.123  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_13
+2021-01-19 17:19:21.124  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_13
+2021-01-19 17:19:21.129  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_13
+2021-01-19 17:19:21.133  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_14
+2021-01-19 17:19:21.137  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_14
+2021-01-19 17:19:21.138  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_14
+2021-01-19 17:19:21.139  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteFileUsingDELETE_7
+2021-01-19 17:19:21.140  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_14
+2021-01-19 17:19:21.141  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_14
+2021-01-19 17:19:21.142  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadFileUsingPOST_7
+2021-01-19 17:19:21.148  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_14
+2021-01-19 17:19:21.152  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_15
+2021-01-19 17:19:21.153  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_15
+2021-01-19 17:19:21.154  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_15
+2021-01-19 17:19:21.155  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_15
+2021-01-19 17:19:21.156  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getListByGpsCodeUsingGET_1
+2021-01-19 17:19:21.157  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_15
+2021-01-19 17:19:21.159  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_15
+2021-01-19 17:19:21.163  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_16
+2021-01-19 17:19:21.164  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_16
+2021-01-19 17:19:21.165  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_16
+2021-01-19 17:19:21.166  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_16
+2021-01-19 17:19:21.167  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_16
+2021-01-19 17:19:21.171  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_16
+2021-01-19 17:19:21.175  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_17
+2021-01-19 17:19:21.177  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_17
+2021-01-19 17:19:21.179  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: countByTypeUsingGET_1
+2021-01-19 17:19:21.180  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_17
+2021-01-19 17:19:21.181  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteFileUsingDELETE_8
+2021-01-19 17:19:21.182  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_17
+2021-01-19 17:19:21.183  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_17
+2021-01-19 17:19:21.184  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadFileUsingPOST_8
+2021-01-19 17:19:21.189  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_17
+2021-01-19 17:19:21.192  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_18
+2021-01-19 17:19:21.193  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_18
+2021-01-19 17:19:21.196  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_18
+2021-01-19 17:19:21.197  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_18
+2021-01-19 17:19:21.198  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_18
+2021-01-19 17:19:21.202  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_18
+2021-01-19 17:19:21.206  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_19
+2021-01-19 17:19:21.207  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_19
+2021-01-19 17:19:21.207  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_19
+2021-01-19 17:19:21.208  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_19
+2021-01-19 17:19:21.214  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_19
+2021-01-19 17:19:21.219  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_19
+2021-01-19 17:19:21.224  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_20
+2021-01-19 17:19:21.226  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_20
+2021-01-19 17:19:21.229  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_20
+2021-01-19 17:19:21.230  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteFileUsingDELETE_9
+2021-01-19 17:19:21.231  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_20
+2021-01-19 17:19:21.233  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_20
+2021-01-19 17:19:21.234  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadFileUsingPOST_9
+2021-01-19 17:19:21.238  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_20
+2021-01-19 17:19:21.243  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_21
+2021-01-19 17:19:21.244  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_21
+2021-01-19 17:19:21.245  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: countByTypeUsingGET_2
+2021-01-19 17:19:21.246  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_21
+2021-01-19 17:19:21.247  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteFileUsingDELETE_10
+2021-01-19 17:19:21.248  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_21
+2021-01-19 17:19:21.250  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_21
+2021-01-19 17:19:21.250  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadFileUsingPOST_10
+2021-01-19 17:19:21.255  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_21
+2021-01-19 17:19:21.260  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_22
+2021-01-19 17:19:21.261  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_22
+2021-01-19 17:19:21.262  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_22
+2021-01-19 17:19:21.263  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteFileUsingDELETE_11
+2021-01-19 17:19:21.265  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_22
+2021-01-19 17:19:21.267  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_22
+2021-01-19 17:19:21.268  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadFileUsingPOST_11
+2021-01-19 17:19:21.273  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_22
+2021-01-19 17:19:21.300  INFO 18348 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-19 17:19:21.306  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_23
+2021-01-19 17:19:21.307  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_23
+2021-01-19 17:19:21.309  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_23
+2021-01-19 17:19:21.313  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_23
+2021-01-19 17:19:21.317  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_24
+2021-01-19 17:19:21.318  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_24
+2021-01-19 17:19:21.319  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_23
+2021-01-19 17:19:21.322  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSelfUsingGET_1
+2021-01-19 17:19:21.324  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_24
+2021-01-19 17:19:21.328  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_24
+2021-01-19 17:19:21.332  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_25
+2021-01-19 17:19:21.333  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_23
+2021-01-19 17:19:21.333  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_25
+2021-01-19 17:19:21.334  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_24
+2021-01-19 17:19:21.335  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_25
+2021-01-19 17:19:21.340  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_25
+2021-01-19 17:19:21.344  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_26
+2021-01-19 17:19:21.345  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_24
+2021-01-19 17:19:21.346  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_26
+2021-01-19 17:19:21.347  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_25
+2021-01-19 17:19:21.349  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_26
+2021-01-19 17:19:21.351  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_26
+2021-01-19 17:19:21.355  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_27
+2021-01-19 17:19:21.356  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_25
+2021-01-19 17:19:21.357  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_27
+2021-01-19 17:19:21.357  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteFileUsingDELETE_12
+2021-01-19 17:19:21.358  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_26
+2021-01-19 17:19:21.360  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_27
+2021-01-19 17:19:21.361  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadFileUsingPOST_12
+2021-01-19 17:19:21.366  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_27
+2021-01-19 17:19:21.369  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_28
+2021-01-19 17:19:21.370  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_28
+2021-01-19 17:19:21.371  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSelfUsingGET_2
+2021-01-19 17:19:21.372  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_28
+2021-01-19 17:19:21.380  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_28
+2021-01-19 17:19:21.384  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_29
+2021-01-19 17:19:21.385  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchDeleteUsingDELETE_26
+2021-01-19 17:19:21.386  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_29
+2021-01-19 17:19:21.387  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_27
+2021-01-19 17:19:21.389  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: loginUsingPOST_1
+2021-01-19 17:19:21.391  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_29
+2021-01-19 17:19:21.396  INFO 18348 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_29
+2021-01-19 17:19:21.412  INFO 18348 --- [           main] com.example.oldtown.OldTownApplication   : Started OldTownApplication in 8.929 seconds (JVM running for 9.273)
