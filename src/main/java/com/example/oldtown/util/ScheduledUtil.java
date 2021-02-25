@@ -65,7 +65,8 @@ public class ScheduledUtil {
 
     // rtmp转发
     private static final String NMS_REDIS_GROUP = "nms:";
-    private static final String NMS_IP = "192.168.1.104";
+    // private static final String NMS_IP = "192.168.0.222"; // linux服务器
+    private static final String NMS_IP = "192.168.0.90"; // 本地服务器
     private static final String NMS_USERNAME = "admin";
     private static final String NMS_PASSWORD = "admin";
     private static final List<Integer> NMS_STATUS_OK = Arrays.asList(1, 2);

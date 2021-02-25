@@ -50,8 +50,10 @@ import org.springframework.web.multipart.MultipartFile;
 public class ComPoiServiceImpl extends ServiceImpl<ComPoiMapper, ComPoi> implements ComPoiService {
     private final Logger LOGGER = LoggerFactory.getLogger(ComPoiServiceImpl.class);
     private static final String NMS_REDIS_GROUP = "nms:";
-    private static final String NMS_IP = "192.168.1.104";
-    private static final String NMS_IP2 = "zjtoprs.f3322.net";
+    // private static final String NMS_IP = "192.168.0.222"; // linux服务器
+    // private static final String NMS_IP2 = "61.153.180.66"; // linux服务器
+    private static final String NMS_IP = "192.168.0.90"; // 本地服务器
+    private static final String NMS_IP2 = "zjtoprs.f3322.net";// 本地服务器
     // private static final String NMS_PORT = "8001";
     private static final List<Integer> NMS_STATUS_OK = Arrays.asList(1,2);
 
